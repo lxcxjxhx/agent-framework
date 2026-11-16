@@ -201,14 +201,6 @@ class BedrockChatOptions(ChatOptions[ResponseModelT], Generic[ResponseModelT], t
     """Not supported in Bedrock Converse API."""
 
 
-BEDROCK_OPTION_TRANSLATIONS: dict[str, str] = {
-    "model": "modelId",
-    "max_tokens": "maxTokens",
-    "top_p": "topP",
-    "stop": "stopSequences",
-}
-"""Maps ChatOptions keys to Bedrock Converse API parameter names."""
-
 BedrockChatOptionsT = TypeVar("BedrockChatOptionsT", bound=TypedDict, default="BedrockChatOptions", covariant=True)  # type: ignore[valid-type]
 
 

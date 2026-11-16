@@ -214,8 +214,4 @@ class AGUIChatOptions(ChatOptions[ResponseModelT], Generic[ResponseModelT], tota
     """Not applicable for AG-UI protocol."""
 
 
-AGUI_OPTION_TRANSLATIONS: dict[str, str] = {}
-"""Maps ChatOptions keys to AG-UI parameter names (protocol uses standard names)."""
-
-
 # endregion

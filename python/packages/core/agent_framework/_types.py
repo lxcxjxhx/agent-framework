@@ -425,33 +425,6 @@ else:
 
 CreatedAtT = str  # Use a datetimeoffset type? Or a more specific type like datetime.datetime?
 
-KNOWN_MEDIA_TYPES = [
-    "application/json",
-    "application/octet-stream",
-    "application/pdf",
-    "application/xml",
-    "audio/mpeg",
-    "audio/mp3",
-    "audio/ogg",
-    "audio/wav",
-    "image/apng",
-    "image/avif",
-    "image/bmp",
-    "image/gif",
-    "image/jpeg",
-    "image/png",
-    "image/svg+xml",
-    "image/tiff",
-    "image/webp",
-    "text/css",
-    "text/csv",
-    "text/html",
-    "text/javascript",
-    "text/plain",
-    "text/plain;charset=UTF-8",
-    "text/xml",
-]
-
 # region Unified Content Types
 
 ContentType = Literal[

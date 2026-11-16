@@ -56,10 +56,6 @@ MessageRole = Literal["unknown", "user", "assistant", "system", "critic", "discr
 # Roles accepted for a conversation message, derived from MessageRole itself.
 _MESSAGE_ROLES = frozenset(get_args(MessageRole))
 
-# Checkpoint item type constants
-CONVERSATION_ITEM_TYPE_CHECKPOINT = "checkpoint"
-CONVERSATION_TYPE_CHECKPOINT_CONTAINER = "checkpoint_container"
-
 
 class ConversationStore(ABC):
     """Abstract base class for conversation storage.
